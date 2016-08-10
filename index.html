@@ -11,52 +11,79 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name"></input>
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email"></input>
-          </div>
-          <div class="form-group">
-            <label for="place">What Contenint do you want to travel to?</label>
-            <select class="form-control" id="place">
-              <option>Africa</option>
-              <option>Europe</option>
-              <option>Asia</option>
-            </select>
-          </div>
-          <fieldset class="form-group">
-            <legend>Environment</legend>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="city" value="one">
-                City
-              </label>
+        <h1>Let us recommend a travel destination for you!</h1>
+        <h3>Fill out the form below</h3>
+        <div id="travel-survey">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name"></input>
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email"></input>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="beach" value="one">
-                Beach
-              </label>
+            <div class="form-group">
+              <label for="place">What Contenint do you want to travel to?</label>
+              <select id="place" class="form-control">
+                <option>Africa</option>
+                <option>Europe</option>
+                <option>Asia</option>
+              </select>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="mountains" value="one">
-                Mountains
-              </label>
+            <fieldset id="environment" class="form-group">
+              <legend>Environment</legend>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="city" value="City" checked>
+                  City
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="beach" value="Beach">
+                  Beach
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="mountains" value="Mountains">
+                  Mountains
+                </label>
+              </div>
+            </fieldset>
+            <div class="form-group">
+              <label for="when">When do you want to travel?</label>
+              <input id="when" class="form-control" type="date">
             </div>
-          </fieldset>
-          <div class="form-group">
-            <label for="when">When do you want to travel?</label>
-            <input id="when" class="form-control" type="date">
-          </div>
-          <div class="form-group">
-            <label for="color">What's your favorite color?</label>
-            <input id="color" class="form-control" type="color">
-          </div>
-          <button type="submit" class="btn">Submit</button>
-        </form>
+            <div class="form-group">
+              <label for="color">What's your favorite color?</label>
+              <input id="color" class="form-control" type="color">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+<!-- THIS IS WHERE OUR RESULTS GO -->
+      <div class="container">
+        <div id="thailand">
+          <h2>You should go to Thailand</h2>
+          <img src="img/thailand.jpg">
+          <p>From forests to beaches, Thailand is one of the most beautiful and inexpensive countries in the world! Grab your swimsuits and get ready to swim amongst the sea turtles in Thailand's clear, beauitful water.</p>
+        </div>
+        <div id="france">
+          <h2>France is the place you should be!</h2>
+          <img src="img/france.jpg">
+          <p>The place to drink wine, eat cheese, and be merry. France is the best place to be.</p>
+        </div>
+        <div id="kenya">
+          <h2>Get ready to go to Kenya!</h2>
+          <img src="img/kenya.png">
+          <p>What a great country to travel to. You'll enjoy the animals, roaming the plains, and climbing the mountains.</p>
+        </div>
+        <div id="stay-home">
+          <h2>Stay Home!</h2>
+          <img src="img/stayhome.jpg">
+          <p>Clearly those options don't exist. So you should stay at home and dream about the place you just made up.</p>
+        </div>
       </div>
     </div>
   </body>
