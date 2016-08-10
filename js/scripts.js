@@ -13,17 +13,28 @@ $(document).ready(function(){
     $("#thailand").hide();
     $("#france").hide();
     $("#stay-home").hide();
+    $("#switzerland").hide();
+    $("#nepal").hide();
+    $("#capetown").hide();
 
     if (place === "Africa" && envir === "Mountains") {
       $("#kenya").show();
+      
     } else if (place === "Asia" && envir === "Beach") {
       $("#thailand").show();
     } else if (place === "Europe" && envir === "City") {
       $("#france").show();
+    } else if (place === "Asia" && envir === "Mountains") {
+      $("#nepal").show();
+    } else if (place === "Europe" && envir === "Mountains") {
+      $("#switzerland").show();
+    } else if (place === "Africa" && envir === "City") {
+      $("#capetown").show();
     } else {
       $("#stay-home").show();
     };
 
+    $(".jumbotron").css("background", "color");
 
     event.preventDefault();
   });

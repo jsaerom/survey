@@ -1,7 +1,21 @@
-#thailand, #france, #kenya, #stay-home {
+#thailand, #france, #kenya, #stay-home, #switzerland, #capetown, #nepal {
   display: none;
+  text-align: center;
 }
 
 .jumbotron {
   margin-top: 10%;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Lobster', cursive;
+}
+
+img{
+  width: 900px;
 }
